@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"milestone1\startup_stm32f103xb.o"
+"milestone1\main.o"
+"milestone1\stm32f1xx_it.o"
+"milestone1\stm32f1xx_hal_msp.o"
+"milestone1\stm32f1xx_hal_timebase_tim.o"
+"milestone1\stm32f1xx_hal_gpio_ex.o"
+"milestone1\stm32f1xx_hal_i2c.o"
+"milestone1\stm32f1xx_hal.o"
+"milestone1\stm32f1xx_hal_rcc.o"
+"milestone1\stm32f1xx_hal_rcc_ex.o"
+"milestone1\stm32f1xx_hal_gpio.o"
+"milestone1\stm32f1xx_hal_dma.o"
+"milestone1\stm32f1xx_hal_cortex.o"
+"milestone1\stm32f1xx_hal_pwr.o"
+"milestone1\stm32f1xx_hal_flash.o"
+"milestone1\stm32f1xx_hal_flash_ex.o"
+"milestone1\stm32f1xx_hal_exti.o"
+"milestone1\stm32f1xx_hal_tim.o"
+"milestone1\stm32f1xx_hal_tim_ex.o"
+"milestone1\stm32f1xx_hal_uart.o"
+"milestone1\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Milestone1\Milestone1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Milestone1.map" -o Milestone1\Milestone1.axf
