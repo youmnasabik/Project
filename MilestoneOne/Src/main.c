@@ -149,7 +149,7 @@ int main(void)
     HAL_I2C_Master_Transmit(&hi2c1, 0xD0, YEAR, 2, 10);
 	
 	
-	//Receive via I2C and forward to UART  Thursday, 7 May, 2020  21:00:00
+	//Receive via I2C and forward to UART  
 	uint8_t out[] = {'D','A','Y','=',0,0,',',0,0,'-',0,0,'-',0,0,'\r','\n','T','I','M','E','=',0,0,':',0,0,':',0,0,'\r','\n'};
    while (1)
    {
